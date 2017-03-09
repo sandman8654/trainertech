@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/plugins/canvasjs/canvasjs.js"></script>
+<script type="text/javascript">
+window.onload = function () {
+	var isCanvasSupported = !!document.createElement("canvas").getContext; 
+	// You might want to remove this line if you are not planning on using it.
+
+	CanvasJS.addColorSet("customizedColorSet",[
+        "#1B1B1B",
+        "#1893D1",
+        "#008080",
+        "#2E8B57",
+        "#3CB371",
+        "#90EE90"                
+    ]);
+
+	var theme = {
+	    Chart: {
+	        colorSet: "customizedColorSet"
+	    },
+	    Title: {
+	        fontFamily: isCanvasSupported ? "Calibri, Optima, Candara, Verdana, Geneva, sans-serif" : "calibri",
+	        fontSize: 24,
+	        fontColor: "#000000",
+	        fontWeight: "bold",
+	        verticalAlign: "top",
+	        horizontalAlign: "left",
+	        margin: 10
+	    },
+	    Axis: {
+	        titleFontSize: 20,
+	        titleFontWeight: "bold",
+	        titleFontColor: "#000000",
+	        titleFontFamily: "arial",
+
+	        labelFontFamily: "arial",
+	        labelFontSize: 16,
+	        labelFontWeight: "bold",
+	        labelFontColor: "#000000",
+	        tickColor: "#ECF0F1",
+	        tickThickness: 1,
+	        gridThickness: 1,
+	        gridColor: "red",
+	        lineThickness: 2,
+	        lineColor: "#ddd"
+	    },
+	    Legend: {
+	    	fontSize: 20,
+	        verticalAlign: "top",
+	        horizontalAlign: "right",
+	    },
+	    DataSeries: {
+	        //bevelEnabled: true,
+	        indexLabelFontColor: "grey",
+	        //indexLabelFontFamily: "Trebuchet MS, monospace, Courier New, Courier",
+	        indexLabelFontFamily: isCanvasSupported ? "Calibri, Optima, Candara, Verdana, Geneva, sans-serif" : "calibri",
+	        //indexLabelFontWeight: "bold",
+	        indexLabelFontSize: 18,
+	        //indexLabelLineColor: "lightgrey",
+	        indexLabelLineThickness: 1
+	    }
+	};
+	CanvasJS.addTheme('customizedTheme',theme); 
+
+	var chart = new CanvasJS.Chart("chartContainer",
+	{
+		title:{
+			text: "Comparison:"
+		},
+		axisY:{
+			title:"Weight",
+    	    gridThickness: 0 
+		},
+		axisX:{
+    	    gridColor: "#ddd",
+    	    gridThickness: 1 
+		},
+		zoomEnabled: true,
+   		theme: 'customizedTheme',
+   		backgroundColor: "#ECF0F1",
+   		data: [
+  			{
+		   		showInLegend: true,
+		      	legendText: "Trainee 1",
+				markerColor: "#FFFFFF",
+				markerSize: 10,
+				markerBorderColor: "#1B1B1B",
+				markerBorderThickness: 3,
+				lineThickness: 3,
+  				click: function(e){
+			        alert('set_id,'+e.dataPoint.x+","+e.dataPoint.y);
+    			},
+    			type: "line",
+			    dataPoints: 
+			    [
+				    { x: 0, y: 0 },
+				    { x: 20, y: 200 },
+				    { x: 30, y: 300 },
+				    { x: 40, y: 250 },
+				    { x: 50, y: 180 },
+				    { x: 60, y: 150 },
+				    { x: 70, y: 50 },
+			    ]
+  			},
+  			{
+		   		showInLegend: true,
+		      	legendText: "Trainee 2",
+				markerColor: "#FFFFFF",
+				markerSize: 10,
+				markerBorderColor: "#1893D1",
+				markerBorderThickness: 3,
+				lineThickness: 3,
+  				click: function(e){
+			        alert('set_id,'+e.dataPoint.x+","+e.dataPoint.y);
+    			},
+    			type: "line",
+			    dataPoints: 
+			    [
+				    { x: 10, y: 0 },
+				    { x: 20, y: 50 },
+				    { x: 30, y: 100 },
+				    { x: 40, y: 150 },
+				    { x: 50, y: 150 },
+				    { x: 60, y: 50 },
+				    { x: 70, y: 150 },
+			    ]
+  			}
+  		]
+	});
+
+chart.render();
+}
+
+$(document).ready(function(){
+	setTimeout(function(){
+		$('.canvasjs-chart-credit').hide();
+	},500);
+});
+</script>
+</head>
+<body>
+  <div id="chartContainer" style="height: 300px; width: 100%;">
+  </div>
+</body>
+</html>

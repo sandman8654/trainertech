@@ -1,0 +1,224 @@
+@media screen and (min-width:851px) and (max-width:1024px) {
+
+	.add-workout {
+		padding: 5% 0;
+	}
+
+	.fc-button-prev {
+		left: 37%;
+	}
+
+	.fc-button-next {
+		right: 37%;
+	}
+
+	.contant .col-lg-4 .btn-blue {
+		margin-bottom: 20px;
+	}
+
+}
+
+@media screen and (min-width:660px) and (max-width:850px) {
+
+	.left-nav {
+		width: 155px;
+	}
+
+	.contant {
+		margin-left: 155px;
+	}
+
+	.add-workout {
+		padding: 5% 0;
+	}
+
+	.fc-button-prev {
+		left: 32%;
+	}
+
+	.fc-button-next {
+		right: 32%;
+	}
+
+	.form-horizontal .control-label {
+		text-align: left;
+	}
+
+	footer#footer {
+		margin-top: 70px;
+	}
+
+	.contant .col-lg-4 .btn-blue {
+		margin-bottom: 20px;
+	}
+
+}
+
+@media screen and (min-width:460px) and (max-width:659px){
+
+	.left-nav {
+		display: none;
+	}
+
+	.contant {
+		margin-left: 0;
+		padding-top: 90px;
+	}
+
+	a.menu {display: block;}
+
+	a.logo {
+		margin-left: 40px;
+	}
+
+	header#header {
+		padding: 20px;
+		position: absolute;
+	}
+
+	.contant > header form {
+		float: none;
+		margin: 10px 0;
+	}
+
+	footer#footer {
+		margin-top: 0;
+	}
+
+	#footer ul {
+		padding-left: 0;
+	}
+
+	.add-workout {
+		padding: 5% 0;
+	}
+
+	.fc-button-prev {
+		left: 32%;
+	}
+
+	.fc-button-next {
+		right: 32%;
+	}
+
+	.fc-grid .fc-day-number {
+		font-size: 44px;
+	}
+
+	.tasi-form .btn-blue{
+		margin-top: 10px;
+	}
+
+	.contant .col-lg-4 .btn-blue {
+		margin-bottom: 20px;
+	}
+
+}
+
+@media screen and (max-width:459px){
+
+	.left-nav {
+		display: none;
+	}
+
+	.contant {
+		margin-left: 0;
+		padding-top: 90px;
+	}
+
+	a.menu {display: block;}
+
+	a.logo {
+		margin-left: 40px;
+		width: 27%;
+		display: inline-block;
+	}
+
+	a.logo img {
+		max-width: 100%;
+	}
+
+	header#header {
+		padding: 20px;
+		position: absolute;
+	}
+
+	.contant > header form {
+		float: none;
+		margin: 10px 0;
+	}
+
+	footer#footer {
+		margin-top: 0;
+	}
+
+	#footer ul {
+		padding-left: 0;
+	}
+
+	.header-menu li a {
+		font-size: 13px;
+	}
+
+	.header-menu {
+		margin-top: 3px;
+	}
+
+	a.menu {
+		top: 14px;
+	}
+
+	.contant > header form input, .contant > header form select {
+		width: 129px;
+	}
+
+	#footer ul {
+		float: none;
+		padding-left: 0;
+		margin-top: 10px;
+	}
+
+	#footer ul li {
+		margin: 0 7px;
+	}
+
+	#footer .social {text-align: left;}
+
+	#footer .social a {
+		display: block;
+		margin-left: 0;
+	}
+
+	.add-workout {
+		padding: 5% 0;
+	}
+
+	.fc-button-prev {
+		left: 25%;
+	}
+
+	.fc-button-next {
+		right: 25%;
+	}
+
+	.fc-grid .fc-day-number {
+		font-size: 30px;
+	}
+
+	.fc th.fc-widget-header {
+		font-size: 15px;
+	}
+
+	.tasi-form .btn-blue{
+		margin-top: 10px;
+	}
+
+	.contant .col-lg-4 .btn-blue {
+		margin-bottom: 20px;
+	}
+
+	.panel-heading i {
+		margin: 0 11px;
+	}
+
+}

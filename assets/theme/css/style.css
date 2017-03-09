@@ -1,0 +1,418 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+
+body {
+	background: #ecf0f1;
+	color: #1b1b1b;
+	font-family: 'Roboto';
+}
+
+ul {
+	list-style: none;
+}
+
+h4 {
+	color: #425053;
+	font-weight: 600;
+}
+
+p {
+	font-weight: 500;
+	font-size: 15px;
+}
+
+a:hover {
+	text-decoration: none;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+}
+
+header#header {
+	background: #131313;
+	position: fixed;
+	/*padding: 30px;*/
+	padding: 22px;
+	z-index: 10;
+	width: 100%;
+}
+
+a.menu {display: none;}
+
+.header-menu {
+	float: right;
+	padding: 0;
+	margin: 0;
+	margin-top: 5px;
+}
+
+.header-menu li {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.header-menu li a {
+	color: #fff;
+	font-family: 'Roboto';
+	font-size: 16px;
+}
+
+.header-menu li a i {
+	color: #5190ab;
+	margin-right: 5px;
+}
+
+.header-menu li a:hover {
+	color: #5190ab
+}
+
+.left-nav {
+	width: 220px;
+	/*padding-top: 95px;*/
+	padding-top: 90px;
+	background: #1b1b1b;
+	position: fixed;
+	height: 100%;
+}
+
+.left-nav ul {
+	padding: 0;
+	margin: 0;
+}
+
+.left-nav > ul > li {
+	display: block;
+	margin-bottom: 1px;
+}
+
+.left-nav ul > li > a {
+	color: #fff;
+	font-family: 'Roboto';
+	font-size: 16px;
+	font-weight: 500;
+	padding: 15px 15px;
+	display: block;
+	background: #1f1f1f;
+}
+
+.left-nav > ul > li:hover > a, .left-nav > ul > li > a.active {
+	background: #ecf0f1;
+	color: #5190ab;
+}
+
+.left-nav ul > li > a i {
+	color: #5190ab;
+	margin-right: 10px;
+	font-size: 20px;
+} 
+
+.left-nav > ul > li > ul {
+	background: #e1e5e6
+} 
+
+.left-nav > ul > li > ul > li > a {
+	background: #e1e5e6;
+	color: #5190ab;
+	padding: 5px 0px 7px 25px;
+}
+
+.left-nav > ul > li > ul > li  li a {
+	background: #e1e5e6;
+	color: #1f1f1f;
+	font-size: 14px;
+	padding: 5px 0px 7px 25px;
+}
+
+.contant {
+	margin-left: 220px;
+	padding: 120px 20px 0;
+}
+
+.contant > header {
+	margin-bottom: 20px;
+}
+
+.contant > header span {
+	font-size: 18px;
+	font-family: 'Roboto';
+	font-weight: 500;
+} 
+
+.contant > header span img {
+	margin-right: 15px;
+}
+
+.contant > header form {
+	float: right;
+}
+
+.contant > header form input, .contant > header form select {
+	background: #e5e9ea;
+	border: 0;
+	box-shadow: none;
+	border-radius: 3px;
+	width: 180px;
+	padding: 8px 10px;
+}
+
+.contant > header form input {
+	background: url(../img/search.png) no-repeat center left 10px #e5e9ea;
+	padding-left: 35px;
+}
+
+.contant > header form select {
+	margin-left: 15px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: url(../img/select.png) no-repeat center right 10px #e5e9ea;
+}
+
+.home-table thead {
+	background: #425053;
+	color: #ecf0f1;
+	font-family: 'Roboto';
+	font-size: 14px;
+}
+
+.table.home-table > tbody > tr > td {
+	background: #e8eced;
+	border-top: 1px solid #ecf0f1;
+	font-family: 'Roboto';
+	font-size: 14px;
+	font-weight: bold;
+	padding: 15px;
+
+}
+
+.table.home-table > tbody > tr > td input[type="checkbox"].ok {
+	margin-left: 5px;
+	margin-top: 1px;
+}
+
+.table.home-table.table-striped > tbody > tr:nth-child(odd) > td, .table.home-table.table-striped > tbody > tr:nth-child(odd) > th {
+	background: #e5e9ea;
+}
+
+input[type="checkbox"].ok {
+	position: relative;
+	-webkit-appearance: none;
+	display: inline-block;
+	background: url(../img/ok.png) no-repeat;
+	outline: none;
+	cursor: pointer;
+	width: 18px;
+	height: 18px;
+	background-position: top right;
+}
+
+input[type="checkbox"].ok:checked {
+	background-position: 0px 0px;
+}
+
+.panel-heading {
+	background: #425053;
+	border-radius: 0;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.panel-heading img {
+	margin-left: 5px;
+}
+
+.panel {
+	border: 0;
+	box-shadow: none;
+	background: #e5e9ea;
+	border-radius:0;
+}
+
+#calendar {
+	width: 100%;
+	margin: 0 auto;
+}
+
+select.st-select {
+	display: block;
+	background: #e5e9ea;
+	border:0;
+	border-radius: 0;
+	box-shadow: none;
+	width: 100%;
+	color: #425053;
+	margin-bottom: 10px;
+	font-size: 14px;
+	padding: 10px;
+}
+
+.panel-body span {
+	font-weight: 500;
+	margin-right: 9px;
+}
+
+.panel-body input[type="checkbox"].ok {
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+
+.panel-body.lt {
+	background: #e8eced;
+	border-top: 1px solid #ecf0f1;
+	border-bottom: 1px solid #ecf0f1;
+}
+
+.panel-heading input[type="checkbox"].ok {
+	margin-left: 5px;
+}
+
+.mt-35 {
+	margin-top: 35px;
+}
+
+.panel-body textarea {
+	width: 100%;
+	color: #131313;
+	border: 0;
+	padding: 10px;
+	font-size: 15px;
+	font-weight: 500;
+	font-family: 'Roboto'
+}
+
+.add-workout {
+	padding: 65% 0;
+}
+
+.add-workout a {margin-bottom: 15px; display: block;}
+
+.flot-chart {
+	margin-top: 40px;
+}
+
+.flot-x-axis {
+	display: none !important;
+}
+
+.flot-text {
+	border-bottom: 1px solid #d7dadb;
+	box-shadow: 0px 1px 0px 0px #fff;
+}
+
+.form_datetime-component .btn {
+	background: transparent;
+	color: #425053;
+}
+
+.form_datetime-component input, .form-control[readonly], .tasi-form input,  .tasi-form textarea {
+	border: 0;
+	box-shadow: none;
+	background: #e5e9ea;
+}
+
+.form_datetime-component {margin-bottom: 10px;}
+
+.panel-heading i {
+	margin: 0 15px;
+	font-size: 35px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.btn-blue {
+	background: #5190ab;
+	color: #ecf0f1;
+	padding: 11px 24px;
+	font-weight: 500;
+	font-family: 'Roboto';
+}
+
+.btn-blue img {
+	margin-right: 8px;
+}
+
+.tasi-form a {
+	color: #5190ab;
+	text-decoration: underline;
+	font-weight: 500;
+}
+
+.tasi-form img {
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.tasi-form .btn-blue {
+	margin-top: 70px;
+	padding: 15px 35px;
+}
+
+.tasi-form img + input {
+	display: inline-block;
+	width: 87%;
+}
+
+
+
+
+footer#footer {
+	background: #131313;
+	width: 100%;
+	z-index: 10;
+	position: relative;
+	bottom: 0;
+	padding: 20px;
+	margin-top: 187px;
+}
+
+#footer .social {
+	text-align: right;
+}
+
+#footer .social a {
+	font-size: 14px;
+	color: #5190ab;
+	font-family: 'Roboto';
+	margin-left: 20px;
+}
+
+#footer .social a i {
+	margin-right: 7px;
+}
+
+span.copy {
+	color: #fff;
+	font-family: 'Roboto';
+	font-weight: 400;
+}
+
+#footer .row {
+	margin-bottom: 15px;
+}
+
+#footer ul {
+	float: right;
+	margin-bottom: 0;
+}
+
+#footer ul li {
+	display: inline-block;
+	font-weight: 400;
+	margin: 0 10px;
+}
+
+#footer ul {
+	color: #fff;
+	font-weight: 400;	
+}
+
+#footer ul li a {
+	color: #fff;
+}
+
+footer#footer{
+	/*position: absolute;*/
+	bottom:0px; 
+}

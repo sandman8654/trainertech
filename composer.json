@@ -1,0 +1,13 @@
+{
+    "require": {
+        "ext-bcmath": "*",
+        "ext-memcached": "*",
+        "ext-mongo": "*",
+        "ext-xsl": "*",
+        "ext-gd" : "*",
+        "ext-mysql" : "*",
+        "ext-mbstring" : "*",
+        "ext-intl" : "*",
+        "ext-curl" : "*"
+    }
+}
